@@ -1,4 +1,4 @@
-size=int(input("Enter the the size of the pattern:"))
+size=int(input("Enter the  size of the pattern:"))
 rows=4
 column=4
 i=0
