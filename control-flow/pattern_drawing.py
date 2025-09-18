@@ -1,10 +1,12 @@
-pattern=int(input("enter the the size of the pattern:"))
+size=int(input("Enter the the size of the pattern:"))
 rows=4
-i=1
-while i<=rows:
-    j=1
-    while j<=rows +1:
-        print("*"  ,end=" ")
+column=4
+i=0
+while i<=rows + 1:
+    j=0
+    while j<=column +1:
+        for j in range(i):
+         print("*" , end="")
         j+=1
         
         print()
