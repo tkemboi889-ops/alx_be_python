@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-def perform_operation(num1 , num2 , operation ):
-=======
+
 def perform_operation(num1, num2, operation):
-    num1 =float()
-    num2 =float()
     operation = str("add,subtract,multiply,divide")
->>>>>>> e81ea2555d9182177f2fa49d3de513753005be8e
-    
+
     if operation == "add":
         result= num1 + num2
         return result
