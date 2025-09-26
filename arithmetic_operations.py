@@ -1,6 +1,5 @@
 
 def perform_operation(num1, num2, operation):
-    operation = str("add,subtract,multiply,divide")
 
     if operation == "add":
         result= num1 + num2
