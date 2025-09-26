@@ -1,4 +1,4 @@
- 1. Prompt for a single task
+
 task = input("Enter your task: ")
 
 # 2. Prompt for the task's priority
@@ -8,7 +8,7 @@ priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
 # Process the task based on priority using a match-case statement
-match priority.lower():
+match priority:
     case 'high':
         reminder_text = "a high priority task"
     case 'medium':
@@ -20,7 +20,7 @@ match priority.lower():
         reminder_text = "a task"
 
 # Use an if statement to modify the reminder for time-bound tasks
-if time_bound.lower() == 'yes':
+if time_bound == 'yes':
     print(f"Reminder: '{task}' is {reminder_text} that requires immediate attention today!")
 else:
     print(f"Note: '{task}' is {reminder_text}")
