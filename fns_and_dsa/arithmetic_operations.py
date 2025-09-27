@@ -1,17 +1,18 @@
-def perform_operation(num1 , num2 , operation ):
+def perform_operation(num1, num2, operation):
+    if operation == 'add':
+        return num1 + num2
     
-    if operation == "add":
-        result= num1 + num2
-        return result
-    elif operation == "subtract":
-        result= num1 - num2
-        return result
-    elif operation == "multiply":
-        result= num1 * num2
-        return result
-    elif operation == "divide":
+    elif operation == 'subtract':
+        return num1 - num2
+    
+    elif operation == 'multiply':
+        return num1 * num2
+    
+    elif operation == 'divide':
         if num2 == 0:
-            print( "Error: Division by zero")
+            return 'Error: Cannot divide by zero.'
         else:
             return num1 / num2
-    return result
+    
+    else:
+        return f"Error: Invalid operation '{operation}'."
