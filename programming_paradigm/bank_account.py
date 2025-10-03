@@ -1,4 +1,4 @@
-class BankAccoungitt:
+class BankAccount:
     def __init__(self, initial_balance=0):
         # Private attribute for encapsulation
         self._account_balance = initial_balance
