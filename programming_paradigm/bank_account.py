@@ -24,3 +24,10 @@ class BankAccount:
     def display_balance(self):
         
         print(f"Current Balance: {self._account_balance}")
+
+        account1=BankAccount(100)
+        account1.deposit(50)
+        account1.display_balance()
+        account1.withdraw(50)
+        account1.display_balance()
+    display_balance()
